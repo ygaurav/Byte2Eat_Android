@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="5dp"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/order_item_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:text="Sandwich"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/orderDateTime"
+        android:textSize="20sp"
+        android:text="20nd Jan 2014 4:30pm"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Quantity"
+            android:id="@+id/labelQuantity"
+            android:layout_below="@id/order_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/labelQuantity"
+            android:layout_below="@id/order_item_name"
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Price"
+            android:id="@+id/labelItemPrice"
+            android:layout_toRightOf="@id/itemQuantity"
+            android:layout_below="@id/order_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/itemPrice"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/labelItemPrice"
+            android:layout_below="@id/order_item_name"
+            android:text="Rs 20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Item Cost"
+            android:id="@+id/labelItemCost"
+            android:layout_toRightOf="@id/itemPrice"
+            android:layout_below="@id/order_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/itemCost"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/labelItemCost"
+            android:layout_below="@id/order_item_name"
+            android:text="Rs 40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

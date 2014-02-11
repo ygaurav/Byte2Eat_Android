@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Byte2Eat</string>
+    <string name="order_history">Order History</string>
+    <string name="terms">1. I agree to pay my dues for the week by Friday End of Day to Godfrey. If Godfrey is not available, I will pay the dues to representatives of Team Bhoj.
+
+\n\n2. I take full responsibility for the order placed from my system.
+
+\n\n3. I will not hold the makers of the software (Asheesh, Vaibhav and Gaurav), SpiderLogic or Team Bhoj or any representatives of Team Bhoj responsible for incorrect order entered from the software on my system.
+
+\n\n4. I agree that this is a personal order and even if I order for multiple people, I am responsible to pay the dues.
+
+\n\n5. I agree to not waste or throw away the food ordered for any reason other than hygiene.
+
+\n\n6. I agree to provide immediate feedback to the makers of the software if I find any Bugs.
+
+\n\n7. I agree to NOT hack into the Admin system for any reason.</string>
+</resources>

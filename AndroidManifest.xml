@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.teambhoj"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18"/>
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+        <activity android:name=".AuthenticatorActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".ThankYouActivity"
+                  android:screenOrientation="portrait"
+                  android:label="Thank You"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".OrderHistoryActivity"
+                  android:screenOrientation="portrait"
+                  android:label="Order History"
+            android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name=".TermsAndConditions"
+                  android:screenOrientation="portrait"
+                  android:label="Terms and Condition"
+                  android:theme="@android:style/Theme.Holo.Light"/>
+
+        <service android:name=".AlarmService"/>
+        <receiver android:name=".AlarmReceiver"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+</manifest>

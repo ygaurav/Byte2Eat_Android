@@ -1,0 +1,17 @@
+# MAC Ignoes
+*.DS_Store
+
+# IDEA Ignores
+*.iml
+*.ipr
+*.iws
+.idea/
+.gradle/
+local.properties
+
+# Generic Android ignores
+bin/
+target
+gen/
+out/
+build/
