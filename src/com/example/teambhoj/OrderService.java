@@ -20,19 +20,12 @@ import org.json.JSONObject;
 public class OrderService {
 
     public String placeOrder(Order order) throws Exception {
-//        return Send(Constants.Method.Post,Constants.Url.OrderUrl,
-//                new JSONObject()
-//                        .put("Quantity",order.Quantity)
-//                        .put("DailyMenuid", order.DailyMenuId)
-//                        .put("UserId", order.UserId)
-//                        .put("DeviceInfo", order.DeviceInfo)
-//                        .toString());
         return Send(Constants.Method.Post,Constants.Url.OrderUrl,
                 new JSONObject()
-                        .put("Quantity",10)
-                        .put("DailyMenuid", 49)
-                        .put("UserId", 66)
-                        .put("DeviceInfo", "HACKED !!")
+                        .put("Quantity",order.Quantity)
+                        .put("DailyMenuid", order.DailyMenuId)
+                        .put("UserId", order.UserId)
+                        .put("DeviceInfo", order.DeviceInfo)
                         .toString());
     }
 

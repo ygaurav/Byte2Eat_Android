@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
-import android.support.v4.app.NotificationCompat;
+//import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -44,8 +44,8 @@ public class AuthenticatorActivity extends BaseActivity {
     protected void onResume(){
         super.onResume();
         Log.d("ESMS","onResume");
-        int orderNumber = getIntent().getIntExtra("Order", 0);
-        Toast.makeText(getApplicationContext(),"on Resume Order " + orderNumber, Toast.LENGTH_SHORT).show();
+//        int orderNumber = getIntent().getIntExtra("Order", 0);
+//        Toast.makeText(getApplicationContext(),"on Resume Order " + orderNumber, Toast.LENGTH_SHORT).show();
         registerAlarm();
     }
 
@@ -95,8 +95,8 @@ public class AuthenticatorActivity extends BaseActivity {
         setContentView(R.layout.authenticator_acitivity);
         Log.d("ESMS","onCreate");
 
-        int orderNumber = getIntent().getIntExtra("Order", 0);
-        Toast.makeText(getApplicationContext(),"on Create Order " + orderNumber, Toast.LENGTH_SHORT).show();
+//        int orderNumber = getIntent().getIntExtra("Order", 0);
+//        toat.makeText(getApplicationContext(),"on Create Order " + orderNumber, Toast.LENGTH_SHORT).show();
         registerAlarm();
         if(isUserLoggedIn()){
             goToOrderScreen(getUserId());
@@ -145,16 +145,16 @@ public class AuthenticatorActivity extends BaseActivity {
     }
 
     public void registerAlarm(){
-        Log.d("ESMS", "registering for alarm.");
-
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR,1);
-        calendar.set(Calendar.MINUTE,28);
-        Intent myIntent = new Intent(AuthenticatorActivity.this, AlarmReceiver.class);
-        pendingIntent = PendingIntent.getBroadcast(AuthenticatorActivity.this, 0, myIntent,0);
-        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),60*1000,pendingIntent);
+//        Log.d("ESMS", "registering for alarm.");
+//
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTimeInMillis(System.currentTimeMillis());
+//        calendar.set(Calendar.HOUR,1);
+//        calendar.set(Calendar.MINUTE,28);
+//        Intent myIntent = new Intent(AuthenticatorActivity.this, AlarmReceiver.class);
+//        pendingIntent = PendingIntent.getBroadcast(AuthenticatorActivity.this, 0, myIntent,0);
+//        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
+//        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),60*1000,pendingIntent);
     }
 
 }
